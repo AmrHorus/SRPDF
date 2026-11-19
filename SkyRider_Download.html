@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07152f">
+  <title>SkyRider PDF — Download</title>
+  <style>
+    :root {
+      --navy: #07152f;
+      --navy-light: #10264b;
+      --white: #ffffff;
+      --muted: #b8c7df;
+      --blue: #6da9ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 50% 15%, rgba(74, 132, 220, .22), transparent 38%),
+        var(--navy);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .card {
+      width: min(100%, 560px);
+      padding: 54px 38px;
+      text-align: center;
+      background: linear-gradient(145deg, #10264b, #0a1b38);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 24px;
+      box-shadow: 0 24px 70px rgba(0,0,0,.35);
+    }
+
+    .logo {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      background: var(--white);
+      border-radius: 22px;
+      font-size: 38px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 7vw, 42px);
+      letter-spacing: -.8px;
+    }
+
+    .subtitle {
+      margin: 14px auto 30px;
+      max-width: 390px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-width: 220px;
+      padding: 16px 28px;
+      color: var(--navy);
+      background: var(--white);
+      border: 2px solid var(--white);
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 750;
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+
+    .download:hover {
+      transform: translateY(-3px);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .download:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 5px;
+    }
+
+    .file-name {
+      margin-top: 20px;
+      color: #d8e4f6;
+      font-size: 13px;
+    }
+
+    .footer {
+      margin-top: 42px;
+      color: #8296b5;
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 42px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo" aria-hidden="true">S</div>
+    <h1>SkyRider PDF</h1>
+    <p class="subtitle">Your PDF tools, ready to go. Download the Windows application using the button below.</p>
+
+    <a class="download" href="SkyRider%20PDF.exe" download="SkyRider PDF.exe">
+      <span aria-hidden="true">↓</span>
+      Download for Windows
+    </a>
+
+    <div class="file-name">SkyRider PDF.exe</div>
+    <div class="footer">© 2026 SkyRider PDF</div>
+  </main>
+</body>
+</html>
